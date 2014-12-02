@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="107.890177">
+<testcase classname="ClubRegistration" name="DataEntryValid" time="54.485362">
+<failure message="java.lang.AssertionError: java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at com.thoughtworks.selenium.SeleneseTestBase.fail(SeleneseTestBase.java:391)&#13;&#10;&#9;at com.seleniumtests.core.CustomVerification.checkForVerificationErrors(CustomVerification.java:102)&#13;&#10;&#9;at com.seleniumtests.cucumbertest.java.FreeRegSteps.i_get_free_signup_welcome_page(FreeRegSteps.java:83)&#13;&#10;&#9;at ✽.And i get free signup welcome page(FreeRegNew.feature:16)&#13;&#10;"><![CDATA[Given I want to open the browser for free signup............................passed
+And I visit the https://tbbqabeta.productpartners.com url for free signup...passed
+And I visit to the Signup Page for free signup..............................passed
+When I click on the free signup.............................................passed
+Then i do submit with valid form entry for free signup......................passed
+And i get free signup welcome page..........................................failed
+
+StackTrace:
+java.lang.AssertionError: java.lang.AssertionError: expected [true] but found [false]
+	at com.thoughtworks.selenium.SeleneseTestBase.fail(SeleneseTestBase.java:391)
+	at com.seleniumtests.core.CustomVerification.checkForVerificationErrors(CustomVerification.java:102)
+	at com.seleniumtests.cucumbertest.java.FreeRegSteps.i_get_free_signup_welcome_page(FreeRegSteps.java:83)
+	at ✽.And i get free signup welcome page(FreeRegNew.feature:16)
+]]></failure>
+</testcase>
+<testcase classname="ClubRegistration" name="DataEntryInValid" time="53.404815">
+<failure message="java.lang.AssertionError: java.lang.AssertionError: expected [false] but found [true]&#13;&#10;&#9;at com.thoughtworks.selenium.SeleneseTestBase.fail(SeleneseTestBase.java:391)&#13;&#10;&#9;at com.seleniumtests.core.CustomVerification.checkForVerificationErrors(CustomVerification.java:102)&#13;&#10;&#9;at com.seleniumtests.cucumbertest.java.FreeRegSteps.i_get_free_signup_error_page(FreeRegSteps.java:123)&#13;&#10;&#9;at ✽.And i get free signup error page(FreeRegNew.feature:24)&#13;&#10;"><![CDATA[Given I want to open the browser for free signup............................passed
+And I visit the https://tbbqabeta.productpartners.com url for free signup...passed
+And I visit to the Signup Page for free signup..............................passed
+When I click on the free signup.............................................passed
+Then i do submit with Invalid form entry for free signup....................passed
+And i get free signup error page............................................failed
+
+StackTrace:
+java.lang.AssertionError: java.lang.AssertionError: expected [false] but found [true]
+	at com.thoughtworks.selenium.SeleneseTestBase.fail(SeleneseTestBase.java:391)
+	at com.seleniumtests.core.CustomVerification.checkForVerificationErrors(CustomVerification.java:102)
+	at com.seleniumtests.cucumbertest.java.FreeRegSteps.i_get_free_signup_error_page(FreeRegSteps.java:123)
+	at ✽.And i get free signup error page(FreeRegNew.feature:24)
+]]></failure>
+</testcase>
+</testsuite>
